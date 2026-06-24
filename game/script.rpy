@@ -47,6 +47,15 @@ define junho = Character("Junho", color="#aaffcc")     # Nervous guy, survives
 define rina  = Character("Rina", color="#ddaaff")      # Sharp girl, survives
 define voice = Character("???", color="#6666ff")       # Anomaly / train voice
 
+image mascot = "fox.png"
+image mascot happy = "fox-jump.png"
+image mascot waving = "fox-wave.png"
+image mascot disguised = "fox-disguised.png"
+
+transform higher:
+    xalign 0.5
+    yalign 0.3
+
 # Stats
 default contamination = 0
 default sanity        = 100
@@ -61,23 +70,48 @@ define inner = Character(None, what_italic=True, what_color="#bbbbbb")
 label start:
 # ============================================================
 
-    scene bg orientation_hall
+    scene expression "#ffffff"
     with fade
 
-    "What kind of a company is the Daydream Inc?"
+    show mascot at higher
 
-    "A company that produces insanely effective hair growth proucts?"
+    "What kind of a company is Daydream Inc.?"
 
-    "No! I heard that they are a pharmaceutical company that's focused on cosmetic and skin treatments"
+    show mascot happy at higher
 
+    "A company that produces insanely effective hair growth products?"
 
-    # inner "Ten rows of seven, all fully filled seats. Why's there only the presenter? No one else is going to welcome the new recuits?"
-    # inner "Forty-seven ceiling tiles. Two flickering in the back-left corner. The man in the front row has been writing the same word on his notepad for ten minutes."
+    show mascot disguised at higher
+
+    "No! I heard they're a pharmaceutical company focused on cosmetics and skin treatments!"
+
+    show mascot happy at higher
+
+    "That's not all!!!"
+
+    "We provide you with every medicine you could ever need!"
+
+    show mascot happy at higher
+
+    "We are a magical pharmaceutical company that makes drugs akin to miracles!"
+
+    show mascot waving at higher
+
+    "Daydream Inc."
+
+    "See you at Daydream!"
+
+    hide mascot with dissolve
+
+    scene bg orientation_hall
+    with fade
 
     scene bg orientation_hall with dissolve
 
     # add applause
     play sound "chap1-applause.wav"
+
+    hr "And... you are the chosen candidates!"
 
     hr "Welcome to Daydream Inc., everyone!"
     hr "Our new employees, who have successfully passed a 145:1 competition, should be proud of themselves! Haha! Now, lets begin the new employee orientation!"
