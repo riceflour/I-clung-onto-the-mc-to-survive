@@ -27,6 +27,7 @@ image mascot waving = "fox-wave.png"
 image mascot disguised = "fox-disguised.png"
 
 image employee1 = "npc1.png"
+image hr excited= "presenter.png"
 
 # Transforms
 
@@ -47,7 +48,7 @@ default chapter       = 1
 
 transform prop:
     xalign 0.5
-    yalign 0.4
+    yalign 0.35
     zoom 1
 
 # Internal monologue style — no name tag, italicized
@@ -125,10 +126,40 @@ label start:
     hide black_box
     with dissolve
 
+    inner "Smart looking but this one's a dud."
 
+    inner "No way a capitalistic company like the daydream inc is going to give every rookie something as expensive as that."
 
+    inner "How did that guy get his hands on that..."
 
-    inner "Overachiever. High energy. Poor threat assessment. Will be a problem."
+    show hr excited at npc_size
+    with dissolve
+
+    hr "You are the chosen candidates!"
+
+    hr "In fact, only a select few of those who applied through this job posting have been gathered in Orientation Room A for this special session"
+
+    hr "Congratulations! You have passed the aptitude test and have been assigned to the special team, the {b}Field Exploration Team{/b}."
+
+    hide hr 
+    with dissolve
+
+    # TODO add murmur sounds
+
+    employee1 "They've already made the assignments?"
+
+    employee1 "Field Exploration Team? Does Daydream Inc. have a department like that?"
+
+    employee1 "Field exploration… for a pharmaceutical company?"
+
+    employee1 "Uh, it sounds like we're being exiled somewhere? Not the headquarters but a branch office? Are they trying to lure us in with fancy words…?"
+
+    inner "Did these people seriously came in without knowing what their jobs will be?"
+
+    inner "Wait what's that on..!"
+
+    "Like a lightning bolt, text appeared on top of the employee holding the intricate black box."
+
 
     hr "Great question! That's actually on slide forty-two—"
 
