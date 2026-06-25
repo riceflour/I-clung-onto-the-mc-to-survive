@@ -1,46 +1,15 @@
-﻿# The script of the game goes in this file.
-
-# # Declare characters used by this game. The color argument colorizes the
-# # name of the character.
-
-# define e = Character("Eileen")
-
-
-# # The game starts here.
-
-# label start:
-
-#     # Show a background. This uses a placeholder by default, but you can
-#     # add a file (named either "bg room.png" or "bg room.jpg") to the
-#     # images directory to show it.
-
-#     scene bg room
-
-#     # This shows a character sprite. A placeholder is used, but you can
-#     # replace it by adding a file named "eileen happy.png" to the images
-#     # directory.
-
-#     show eileen happy
-
-#     # These display lines of dialogue.
-
-#     e "You've created a new Ren'Py game."
-
-#     e "Once you add a story, pictures, and music, you can release it to the world!"
-
-#     # This ends the game.
-
-#     return
-
-# ============================================================
+﻿# ============================================================
 #  GOT DROPPED INTO A GHOST STORY — STILL GOTTA WORK
 #  Chapter 1: New Employee Initiation
 # ============================================================
 
+init python:
+    gui.textbox_alpha = 0.5
+
 define mc   = Character("Mok Jeong", color="#ffcbcb")
 define sys  = Character("SYSTEM", color="#ff4444")
-define employee1 = Character("Employee", color="#cccccc")
-define hr   = Character("HR Manager Shin", color="#aaddff")
+define employee1 = Character("Employee", color="#585858")
+define hr   = Character("HR Manager Shin", color="#335d79")
 define yuna = Character("Yuna", color="#ffccaa")       # Overachiever
 define dohyun = Character("Do-hyun", color="#cccccc")  # Denier
 define somi = Character("Somi", color="#ffaacc")       # Panicker / sweet
@@ -82,7 +51,7 @@ transform prop:
     zoom 1
 
 # Internal monologue style — no name tag, italicized
-define inner = Character(None, what_italic=True, what_color="#bbbbbb")
+define inner = Character(None, what_italic=True, what_color="#999999")
 
 
 # ============================================================
