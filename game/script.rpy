@@ -48,7 +48,7 @@ define junho = Character("Junho", color="#aaffcc")     # Nervous guy, survives
 define rina  = Character("Rina", color="#ddaaff")      # Sharp girl, survives
 define voice = Character("???", color="#6666ff")       # Anomaly / train voice
 
-image bg orientation_hall = "game/images/bg_orientation_hall.png"
+image bg orientation_hall = "images/bg_orientation_hall.png"
 image black_box = "black_box.png" 
 
 
@@ -79,7 +79,7 @@ default chapter       = 1
 transform prop:
     xalign 0.5
     yalign 0.4
-    zoom 0.6
+    zoom 1
 
 # Internal monologue style — no name tag, italicized
 define inner = Character(None, what_italic=True, what_color="#bbbbbb")
