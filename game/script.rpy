@@ -39,6 +39,7 @@
 
 define mc   = Character("Mok Jeong", color="#ffcbcb")
 define sys  = Character("SYSTEM", color="#ff4444")
+define employee1 = Character("Employee", color="#cccccc")
 define hr   = Character("HR Manager Shin", color="#aaddff")
 define yuna = Character("Yuna", color="#ffccaa")       # Overachiever
 define dohyun = Character("Do-hyun", color="#cccccc")  # Denier
@@ -47,10 +48,23 @@ define junho = Character("Junho", color="#aaffcc")     # Nervous guy, survives
 define rina  = Character("Rina", color="#ddaaff")      # Sharp girl, survives
 define voice = Character("???", color="#6666ff")       # Anomaly / train voice
 
+image bg orientation_hall = "game/images/bg_orientation_hall.png"
+image black_box = "black_box.png" 
+
+
 image mascot = "fox.png"
 image mascot happy = "fox-jump.png"
 image mascot waving = "fox-wave.png"
 image mascot disguised = "fox-disguised.png"
+
+image employee1 = "npc1.png"
+
+# Transforms
+
+transform npc_size:
+    xalign 0.2
+    yalign 1.0
+    zoom 0.82
 
 transform higher:
     xalign 0.5
@@ -59,8 +73,13 @@ transform higher:
 # Stats
 default contamination = 0
 default sanity        = 100
-default trust_score   = 0     # how much survivors trust MC (they shouldn't)
+default trust_score   = 0     # how much survivors trust MC (aka none)
 default chapter       = 1
+
+transform prop:
+    xalign 0.5
+    yalign 0.4
+    zoom 0.6
 
 # Internal monologue style — no name tag, italicized
 define inner = Character(None, what_italic=True, what_color="#bbbbbb")
@@ -108,8 +127,7 @@ label start:
 
     scene bg orientation_hall with dissolve
 
-    # add applause
-    play sound "chap1-applause.wav"
+    # play sound "chap1-applause.wav" # TODO: uncomment
 
     hr "And... you are the chosen candidates!"
 
@@ -118,10 +136,29 @@ label start:
 
     inner "So only ten thousand applied? Doesn't seem like that great of a ratio.."
 
-    yuna "Excuse me, did you get that somewhere? Is the company giving those out?"
+
+    show employee1 at npc_size
+    with dissolve
+
+    employee1 "Excuse me, did you get that somewhere? Is the company giving those out?"
 
     inner "That wasn't towards me but the person next to me."
-    inner "Front row. Blazer ironed sharp enough to cut glass. Already talking."
+
+    hide employee1
+
+    "The other employee in question has a strange black box, with a huge silver symbol embossed on it, looked like it had been carefully crafted."
+
+    show black_box at prop
+    with dissolve
+
+    "...it caught the light in a way that felt deliberate."
+
+    hide black_box
+    with dissolve
+
+
+
+
     inner "Overachiever. High energy. Poor threat assessment. Will be a problem."
 
     hr "Great question! That's actually on slide forty-two—"
