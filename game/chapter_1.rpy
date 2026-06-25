@@ -42,7 +42,7 @@ label chapter_1:
     hr "And... you are the chosen candidates!"
 
     hr "Welcome to Daydream Inc., everyone!"
-    hr "Our new employees, who have successfully passed a 145:1 competition, should be proud of themselves! Haha! Now, lets begin the new employee orientation!"
+    hr "Our new employees, who have successfully passed a 145:1 competition, should be proud of themselves! Haha!"
 
     inner "So only ten thousand applied? Doesn't seem like that great of a ratio.."
 
@@ -66,14 +66,28 @@ label chapter_1:
     hide black_box
     with dissolve
 
-    inner "Smart looking but this one's a dud."
+    menu:
+        "\"...\"":
+            inner "Not worth acknowledging." # OR "Smart looking but this one's a dud."
+            inner "How did that guy get his hands on that..."
 
-    inner "No way a capitalistic company like the daydream inc is going to give every rookie something as expensive as that."
+        "\"Are you dumb? No way the company gave him that.\"":
+            $ trust_score -= 5
+            inner "No way a capitalistic company like the daydream inc is going to give every rookie something as expensive as that."
+            emp "Wha-?! Ex-excuse me!"
+            inner "Too loud. People are looking."
+            inner "...that was mildly entertaining though."
 
-    inner "How did that guy get his hands on that..."
+    show hr annoyed at npc_size
+    with dissolve
+
+    "As if to cut someone off..."
 
     show hr excited at npc_size
     with dissolve
+
+
+    hr "Now, lets begin the new employee orientation!"
 
     hr "You are the chosen candidates!"
 
@@ -112,7 +126,11 @@ label chapter_1:
     hide black_box at prop
     with dissolve
 
-    
+    inner "Here we go..."
+
+    hr "Before official employment, there will be a brief probationary period, but don’t worry, it won’t be long! We will assess your practical abilities through an absolute evaluation."
+
+    hr ""
 
     hr "Great question! That's actually on slide forty-two—"
 

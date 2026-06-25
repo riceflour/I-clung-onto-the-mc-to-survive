@@ -30,6 +30,7 @@ image mascot disguised = "fox_disguised.png"
 
 image employee1 = "npc1.png"
 image hr excited= "presenter.png"
+image hr annoyed= "presenter_annoyed.png"
 
 # Transforms
 
@@ -45,7 +46,8 @@ transform higher:
 # Stats
 default contamination = 0
 default sanity        = 100
-default trust_score   = 0     # how much survivors trust MC (aka none)
+default trust_score   = 0     # how much kim soleum trusts MC (aka none)
+default meanness   = 0     # how mean the player character is (unlocks mean dialogue options)
 default chapter       = 1
 
 transform prop:
