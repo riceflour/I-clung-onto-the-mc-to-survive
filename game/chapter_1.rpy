@@ -128,9 +128,9 @@ label chapter_1:
 
     inner "Here we go..."
 
-    hr "Before official employment, there will be a brief probationary period, but don’t worry, it won’t be long! We will assess your practical abilities through an absolute evaluation."
+    hr "Before official employment, there will be a brief probationary period, but don't worry, it won't be long! We will assess your practical abilities through an absolute evaluation."
 
-    hr ""
+    hr "Of course, full participation is necessary for a proper evaluation! Freeloading will not be tolerated!"
 
     hr "Great question! That's actually on slide forty-two—"
 
