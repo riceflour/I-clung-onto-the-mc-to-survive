@@ -18,6 +18,7 @@ define rina  = Character("Rina", color="#ddaaff")      # Sharp girl, survives
 define voice = Character("???", color="#6666ff")       # Anomaly / train voice
 
 image bg orientation_hall = "images/bg_orientation_hall.png"
+image bg subway_inside = "images/bg_subway_inside.png"
 
 image black_box = "black_box.png" 
 image field_exploration_text = "field_ex_text.png" 

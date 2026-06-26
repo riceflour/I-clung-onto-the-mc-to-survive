@@ -74,14 +74,14 @@ label chapter_1:
         "\"Are you dumb? No way the company gave him that.\"":
             $ trust_score -= 5
             inner "No way a capitalistic company like the daydream inc is going to give every rookie something as expensive as that."
-            emp "Wha-?! Ex-excuse me!"
+            employee1 "Wha-?! Ex-excuse me!"
             inner "Too loud. People are looking."
             inner "...that was mildly entertaining though."
 
-    show hr annoyed at npc_size
-    with dissolve
+            show hr annoyed at npc_size
+            with dissolve
 
-    "As if to cut someone off..."
+            "As if to cut someone off..."
 
     show hr excited at npc_size
     with dissolve
@@ -114,7 +114,7 @@ label chapter_1:
 
     "Like a lightning bolt, text appeared on top of the employee holding the intricate black box."
 
-    show black_box at prop
+    show field_exploration_text at prop
     with dissolve
 
     inner "...?"
@@ -123,14 +123,41 @@ label chapter_1:
 
     inner "Suicide squad... that's exactly what Ms Jin said."
 
-    hide black_box at prop
+    hide field_exploration_text at prop
     with dissolve
-
-    inner "Here we go..."
 
     hr "Before official employment, there will be a brief probationary period, but don't worry, it won't be long! We will assess your practical abilities through an absolute evaluation."
 
     hr "Of course, full participation is necessary for a proper evaluation! Freeloading will not be tolerated!"
+
+    inner "Here we go..."
+
+    # TODO play doors shutting sound
+
+    hr "Now, let's get started!"
+
+    # TODO lights go out
+    scene expression "#ffffff"
+    pause 0.1
+    scene bg orientation_hall
+    pause 0.1
+    scene expression "#ffffff"
+    pause 0.1
+    scene bg orientation_hall
+    pause 0.1
+    scene expression "#c8c8c8"
+    pause 0.1
+    scene bg orientation_hall
+    pause 0.1
+    scene expression "#888888"
+    pause 0.1
+    scene bg subway_inside
+    pause 0.1
+    scene expression "#444444"
+    pause 0.1
+    scene bg subway_inside
+
+    # desolate subway station
 
     hr "Great question! That's actually on slide forty-two—"
 
