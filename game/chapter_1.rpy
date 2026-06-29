@@ -258,6 +258,42 @@ label chapter_1:
 
     annoucement "The doors are closing."
 
+    "A chance to get off..!"
+        menu:
+            "\"Get me off now!\"":
+                $ death_count += 1
+                "Some who got off breathed a sigh of relief, some even waving at the ones back on the car."
+                "The doors to the car closed with a creek."
+                "Then.. just as the subway accelerated, something came dripping down."
+                scene bg melting_ending
+                with dissolve
+                "A silver liquid came dripping down that melted flesh like water to cotton candy."
+                pause 2.0
+                centered "— ENDING: The Ones Who Left —"
+                pause 2.0
+                centered "You got off at Sorrow Station."
+                centered "It was, in every sense, the last thing you did."
+                pause 1.0
+                jump bad_end_screen
+            
+            "\"I'll stay in the car.\"":
+                jump stay_in_car
+
+
+label bad_end_screen:
+    scene expression "#000000"
+    with dissolve
+    pause 1.0
+    centered "GAME OVER"
+    pause 1.0
+    menu:
+        "Try again.":
+            jump start
+        "Quit.":
+            $ renpy.quit()
+
+label stay_in_car:
+
     "The people who didn't get off sighed, watching the ones who did wave back at us from the platform."
 
     show people_waving at prop
@@ -325,5 +361,9 @@ label chapter_1:
     hide screen ticker
 
     "Finally, fear began to spread among the people as screams and shouts echoed around."
+
+    "I look across from me."
+
+    "8 people left in the carriage."
 
 

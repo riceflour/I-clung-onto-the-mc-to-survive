@@ -47,6 +47,10 @@ image bg subway_inside = "images/chap1/bg/bg_subway_car.webp" # bg_subway_inside
 image bg melting = "images/chap1/bg/melting.png"
 image bg sorrow_station_watching_dead = "images/chap1/bg/sorrow_station_watching_dead.png"
 
+# ending
+image bg melting_ending = "images/chap1/bg/melting_ending.png"
+
+
 # props
 image black_box = "images/chap1/prop/black_box.png" 
 image field_exploration_text = "images/chap1/prop/field_ex_text.png" 
@@ -87,6 +91,7 @@ default sanity        = 100
 default trust_score   = 0     # how much kim soleum trusts MC (aka none)
 # start off with 20, if u reach 0, you get to do nice things
 default meanness   = 20     # how mean the player character is (unlocks mean dialogue options, or apathetic)
+default death_count       = 1
 default chapter       = 1
 
 transform prop:
