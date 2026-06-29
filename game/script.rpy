@@ -11,6 +11,8 @@ define sys  = Character("SYSTEM", color="#ff4444")
 define employee1 = Character("Employee", color="#585858")
 define hr   = Character("HR Manager Shin", color="#335d79")
 define new_hires = Character("New hires", color="#465966")
+define exploration_records = Character("Exploration records", color="#0252fd")
+
 
 define guy_with_box = Character("New hire with box", color="#6d6c6c")
 define quick_witted = Character("Quick witted new hire", color="#cccccc")
@@ -34,11 +36,14 @@ screen ticker(msg):
             color "#6666ff"
             font "fonts/Inconsolata-Regular.ttf"
             size 22
+            xsize 5000
+            textalign 0.0
+            layout "nobreak"
             at ticker_scroll
 
 transform ticker_scroll:
     xpos 1280
-    linear 8.0 xpos -1280
+    linear 20.0 xpos -1280
     repeat
 
 # bg

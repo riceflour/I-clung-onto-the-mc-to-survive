@@ -204,13 +204,13 @@ label chapter_1:
 
     $ ticker_msg = (
         "This stop is Sorrow, Sorrow Station."
-        "          The doors are on your right…"
-        "          The doors are opening."
-        "          The doors will close in 30 seconds. Once closed, they will never open again."
-        "          Passengers whose destination is Sorrow Station should disembark according to the announcement."
+        "                           The doors are on your right…"
+        "                           The doors are opening."
+        "                           The doors will close in 30 seconds. Once closed, they will never open again."
+        "                           Passengers whose destination is Sorrow Station should disembark according to the announcement."
     )
-
     show screen ticker(ticker_msg)
+    # show screen ticker("This stop is Sorrow, Sorrow Station.                                The doors are on your right…                          The doors are opening.                                    The doors will close in 30 seconds. Once closed, they will never open again.                                                     Passengers whose destination is Sorrow Station should disembark according to the announcement.")
 
     announcement "This stop is Sorrow, Sorrow Station."
 
@@ -218,9 +218,9 @@ label chapter_1:
 
     announcement "The doors are opening."
 
-    annoucement "The doors will close in 30 seconds. Once closed, they will never open again."
+    announcement "The doors will close in 30 seconds. Once closed, they will never open again."
 
-    annoucement "Passengers whose destination is Sorrow Station should disembark according to the announcement."
+    announcement "Passengers whose destination is Sorrow Station should disembark according to the announcement."
 
     hide screen ticker
 
@@ -260,28 +260,28 @@ label chapter_1:
     hide people_getting_off at prop
     with dissolve
 
-    annoucement "The doors are closing."
+    announcement "The doors are closing."
 
     "A chance to get off..!"
-        menu:
-            "\"Get me off now!\"":
-                $ death_count += 1
-                "Some who got off breathed a sigh of relief, some even waving at the ones back on the car."
-                "The doors to the car closed with a creek."
-                "Then.. just as the subway accelerated, something came dripping down."
-                scene bg melting_ending
-                with dissolve
-                "A silver liquid came dripping down that melted flesh like water to cotton candy."
-                pause 2.0
-                centered "— ENDING: The Ones Who Left —"
-                pause 2.0
-                centered "You got off at Sorrow Station."
-                centered "It was, in every sense, the last thing you did."
-                pause 1.0
-                jump bad_end_screen
-            
-            "\"I'll stay in the car.\"":
-                jump stay_in_car
+    menu:
+        "\"Get me off now!\"":
+            $ death_count += 1
+            "Some who got off breathed a sigh of relief, some even waving at the ones back on the car."
+            "The doors to the car closed with a creek."
+            "Then.. just as the subway accelerated, something came dripping down."
+            scene bg melting_ending
+            with dissolve
+            "A silver liquid came dripping down that melted flesh like water to cotton candy."
+            pause 2.0
+            centered "— ENDING: The Ones Who Left —"
+            pause 2.0
+            centered "You got off at Sorrow Station."
+            centered "It was, in every sense, the last thing you did."
+            pause 1.0
+            jump bad_end_screen
+        
+        "\"Let's not do anything rash.\"":
+            jump stay_in_car
 
 
 label bad_end_screen:
