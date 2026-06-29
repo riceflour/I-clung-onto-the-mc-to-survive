@@ -16,10 +16,10 @@ define exploration_records = Character("Exploration records", color="#0252fd")
 
 define guy_with_box = Character("New hire with box", color="#6d6c6c")
 define quick_witted = Character("Quick witted new hire", color="#cccccc")
+define baek_saheon = Character("Baek Saheon", color="#052914")     # baek_saheon, viper
 define yuna = Character("Yuna", color="#ffccaa")       # Overachiever
 define dohyun = Character("Do-hyun", color="#cccccc")  # Denier
 define somi = Character("Somi", color="#ffaacc")       # Panicker / sweet
-define junho = Character("Junho", color="#aaffcc")     # Nervous guy, survives
 define rina  = Character("Rina", color="#ddaaff")      # Sharp girl, survives
 define announcement = Character("Annoucement", color="#6666ff",  what_font="fonts/Inconsolata-Regular.ttf")       # Anomaly / train voice what_font="fonts/ShareTechMono-Regular.ttf"
 define question_mark = Character("???", color="#cefffb")       # Anomaly / train voice what_font="fonts/ShareTechMono-Regular.ttf"

@@ -73,4 +73,19 @@ label chapter_2:
 
     inner "Trying to bring up those exploration records?"
 
+    new_hires "It's not really information… it just feels like everything is straight out of a ghost story. The lecture hall suddenly turned into a subway, and people… died like that." # female doc
+
+    "Her face turned slightly pale, likely remembering the insane dismemberment that happened just moments before."
+
+    new_hires "Ah, I'm sorry. I didn't mean to suddenly—"
+
+    mc "No, I've seen something on online forums too."
+
+    new_hires "Um, you were sitting next to me earlier, right?" # baek neutral
+
+    "It seemed new hire wasn't part of any of the other conversations happening around us. He rubbed the back of his neck and glanced between the woman I was talking to and me before extending his hand like he wanted to shake mine."
+
+    baek_saheon "My name is Baek Saheon."
+
+
     hide screen ticker
