@@ -1,3 +1,7 @@
+# ============================================================
+#  GOT DROPPED INTO A GHOST STORY — STILL GOTTA WORK
+#  Chapter 1: New Employee Initiation
+# ============================================================
 label chapter_1:
     scene expression "#ffffff"
     with fade
@@ -360,10 +364,14 @@ label stay_in_car:
 
     hide screen ticker
 
+    show across at prop with dissolve
+
     "Finally, fear began to spread among the people as screams and shouts echoed around."
 
     "I look across from me."
 
     "8 people left in the carriage."
 
+    show across at prop with dissolve
 
+    jump chapter_2

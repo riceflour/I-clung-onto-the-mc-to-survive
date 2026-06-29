@@ -1,6 +1,6 @@
 ﻿# ============================================================
 #  GOT DROPPED INTO A GHOST STORY — STILL GOTTA WORK
-#  Chapter 1: New Employee Initiation
+#  script
 # ============================================================
 
 init python:
@@ -60,6 +60,7 @@ image people_getting_off = "images/chap1/prop/people_getting_off.png"
 image person_in_next_car = "images/chap1/prop/ppl_in_next_car.png" 
 image people_waving = "images/chap1/prop/people_waving.png" 
 image teardrops = "images/chap1/prop/teardrops.png" 
+image across = "images/chap1/prop/across.png" 
 
 # characters
 image mascot = "images/char/fox.png"
