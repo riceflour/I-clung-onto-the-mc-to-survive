@@ -136,7 +136,6 @@ label chapter_1:
 
     hr "Now, let's get started!"
 
-    # TODO lights go out
     scene expression "#ffffff"
     pause 0.1
     scene bg orientation_hall
@@ -151,6 +150,10 @@ label chapter_1:
     pause 0.1
     scene expression "#888888"
     pause 0.1
+    scene bg orientation_hall
+    pause 0.1
+    scene expression "#6E6E6E"
+    pause 0.1
     scene bg subway_inside
     pause 0.1
     scene expression "#444444"
@@ -159,35 +162,168 @@ label chapter_1:
 
     # desolate subway station
 
-    hr "Great question! That's actually on slide forty-two—"
+    question_mark "Passengers, thank you for using Abyss Transpo today… Our train will not halt."
 
-    dohyun "Is this going to go much longer? I have a 2PM call."
+    question_mark "Please pay attention to the announcements for a pleasant journey to your destination."
 
-    inner "Guy two seats to my left. He said '2PM call' like it's a shield."
-    inner "It isn't."
+    "An unfamiliar announcement, with strange station names, started playing."
 
-    hr "We'll try to keep things moving! Now, if everyone could please check that your lanyards are—"
+    employee1 "Is this some kind of VR? Did we really move?" # TODO sprite for him
 
-    "The lights went out."
+    show scared_rookies at prop
+    with dissolve
 
-    "Not a flicker. Not a stutter."
-    "One moment: fluorescent brightness, motivational posters, HR Manager Shin mid-sentence."
-    "The next: nothing."
+    "Many of the people who were in the auditorium seemed to be there still, which offered some comfort, leading to complacent reactions."
 
-    somi "W— what happened?"
-    dohyun "Power outage. Obviously. Someone call facilities."
-    yuna "I'll handle it—"
+    "They wandered around the subway, looking for any sign of the company or someone from the event, or searched for doors that might open."
 
-    inner "Nobody handle it."
-    inner "Something is wrong with the air."
+    "Soon, they began to get a better sense of the situation."
 
-    sys "[ NOTIFICATION ]"
-    sys "[ You have been selected to participate in a Ghost Story. ]"
-    sys "[ Survival is not guaranteed. Clocking out is the objective. ]"
-    sys "[ Good luck, employee #0047. ]"
+    hide scared_rookies at prop
+    with dissolve
 
-    mc "..."
+    show person_in_next_car at prop
+    with dissolve
 
-    inner "Hm."
+    "There are people in the next car! But… uh, the doors won't open? Is this some new technology?"
 
-    "The floor disappeared."
+    hide person_in_next_car at prop
+    with dissolve
+
+    announcement "Welcome to Abyss Transpo"
+
+    "D-Class Darkness that boasts a ridiculously high difficulty for escaping and one of the most infamous stories. The Field Exploration Team suffers endlessly."
+
+    new_hires "Is this something like an escape room?"
+
+    new_hires "Why would a pharmaceutical company that makes hair loss treatment bother with escape rooms for new sales recruits…?"
+
+    $ ticker_msg = (
+        "This stop is Sorrow, Sorrow Station."
+        "          The doors are on your right…"
+        "          The doors are opening."
+        "          The doors will close in 30 seconds. Once closed, they will never open again."
+        "          Passengers whose destination is Sorrow Station should disembark according to the announcement."
+    )
+
+    show screen ticker(ticker_msg)
+
+    announcement "This stop is Sorrow, Sorrow Station."
+
+    announcement "The doors are on your right…"
+
+    announcement "The doors are opening."
+
+    annoucement "The doors will close in 30 seconds. Once closed, they will never open again."
+
+    annoucement "Passengers whose destination is Sorrow Station should disembark according to the announcement."
+
+    hide screen ticker
+
+    "The familiar voice calmly mixed strange words and phrases into the announcement."
+
+    # pointing outside?
+
+    new_hires "Look outside! It's just a subway station!"
+
+    # outside, people by the door prop
+    show doors_opening at prop
+    with dissolve
+    "Outside the train, the platform was clearly visible. It looked a bit dark and damp, but otherwise, it seemed like an ordinary subway station."
+
+    "Relieved by this, two or three people moved toward the door."
+    hide doors_opening at prop
+    with dissolve
+
+    inner "Idiots.. We just got teleported, and they think to a normal subway? The more normal it looks, the more alarm bells it should be ringing."
+
+    # kim soleum neutral w briefcase
+    guy_with_box "I think it's better if you don't get off."
+
+    guy_with_box "You heard them say 'Sorrow Station'. There's no station like that in Korea. Anyone would think it's strange."
+
+    # baek/viper
+    quick_witted "Yeah, I think this guy's right. Maybe we should wait and see how things play out…"
+
+    "The people who had been about to step off hesitated further."
+
+    new_hires "Hey, the doors are closing!"
+
+    # people moving out people_getting_off
+    show people_getting_off at prop
+    with dissolve
+    "But the sound of the doors closing caused a few panicked individuals to impulsively jump out…"
+    hide people_getting_off at prop
+    with dissolve
+
+    annoucement "The doors are closing."
+
+    "The people who didn't get off sighed, watching the ones who did wave back at us from the platform."
+
+    show people_waving at prop
+    with dissolve
+
+    "Some glanced at the guy who told them to wait, others muttered, suppressing curses."
+
+    hide people_waving at prop
+    with dissolve
+
+    inner "..."
+
+    "I- ..."
+    menu:
+        "\"I understood. In such a strange, unsettling situation, their instinct would be to flee without thinking.\"":
+            $ meanness -= 5
+            inner "They may have made the right decision."
+
+        "\"I did not understand. In such a strange, unsettling situation, we should be trying to get more information.\"":
+            $ meanness += 5
+            inner "Pathetic."
+
+
+    "A grotesque sight unfolded."
+    #teardrops prop
+    show teardrops at prop with dissolve
+
+    "As soon as the people who got off turned around to move…"
+
+    "Silver droplets suddenly poured from the ceiling and pillars of the platform, cascading down on them."
+
+    # change background
+    scene bg melting
+
+    "It looked like giant teardrops."
+
+    "But the countless silver droplets fell onto their bodies like molten metal, producing horrifying tearing sounds."
+
+    "Screams. Convulsions. Silence."
+
+    "Blood mixed with the silver liquid splattered against the windows."
+
+    hide teardrops at prop with dissolve
+
+    show screen ticker("The train is now departing from Sorrow Station")
+
+    announcement "The train is now departing from Sorrow Station"
+
+    scene bg sorrow_station_watching_dead
+
+    "The last thing we saw outside the window."
+
+    "In front of the sliding doors, now soaked in filth and blood, only the crushed remains of the new employees were left behind, twitching slightly."
+
+    "It was the fate of those who chose wrong."
+
+    hide screen ticker
+
+    inner "Idiots."
+
+    show screen ticker("Please pay attention to the announcements for a pleasant journey to your destination.")
+
+    announcement "Please pay attention to the announcements for a pleasant journey to your destination."
+
+    hide screen ticker
+
+    "Finally, fear began to spread among the people as screams and shouts echoed around."
+
+
