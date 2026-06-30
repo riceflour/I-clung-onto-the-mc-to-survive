@@ -125,7 +125,7 @@ label chapter_1:
 
     inner "Is this guy the mc or something?"
 
-    inner "Suicide squad... that's exactly what Ms Jin said."
+    inner "Suicide squad... that's exactly what my ■■ said."
 
     hide field_exploration_text at prop
     with dissolve

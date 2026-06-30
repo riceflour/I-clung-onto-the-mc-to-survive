@@ -153,6 +153,14 @@ label chapter_2:
 
     new_hires "Doesn't 'euphoria' sound kind of… positive? Maybe…"
 
-    "From the sudden slience and comtemplating looks, it seems many were going to get off at euphoria station."
+    "From the sudden silence and comtemplating looks, it seems many were going to get off at euphoria station."
 
     announcement "The doors are on your left…"
+
+    player "Yeah guys, we should wait for more cases, who knows if the stations positive connotation will be related to its safety. Others in the front car are getting off, this could be a good chance to-"
+
+    new_hires "A good chance to what? For them to escape while we are stuck here for who knows how many more stations? I'm getting out of here."
+
+    new_hires "Y-yeah me too!"
+
+    inner "I'm sorry ■■, I tried."
