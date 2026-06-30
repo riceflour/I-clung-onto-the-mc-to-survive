@@ -6,7 +6,7 @@
 init python:
     gui.textbox_alpha = 0.5
 
-define player   = Character("Mok Jeong", color="#ffcbcb")
+define player   = Character("Lee Kiyoung", color="#ffcbcb")
 define sys  = Character("SYSTEM", color="#ff4444")
 define employee1 = Character("Employee", color="#585858")
 define hr   = Character("HR Manager Shin", color="#335d79")
@@ -88,6 +88,7 @@ image go_yeongeun happy = "images/char/go_yeongeun_happy.png"
 
 # baek saheon 
 image baek_saheon netural = "images/char/baek_saheon_neutral.png"
+image baek_saheon smile = "images/char/baek_saheon_smile.png"
 
 # Transforms
 

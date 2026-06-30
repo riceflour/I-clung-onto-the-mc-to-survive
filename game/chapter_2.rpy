@@ -99,7 +99,7 @@ label chapter_2:
 
     player "No, I've seen something on online forums too."
 
-    show baek_saheon neutral at npc_left, speaking
+    show baek_saheon smile at npc_left, speaking
 
     new_hires "Um, you were sitting next to me earlier, right?" # baek neutral
 
@@ -119,3 +119,40 @@ label chapter_2:
 
     exploration_records "Final rank - Section Chief           Of these, 17 are special cases recorded in the wiki."
 
+    inner "This guy's gonna end up as a section chief? Maybe I should follow him instead."
+
+    show kim_soleum neutral at npc_center, not_speaking
+    show go_yeongeun neutral at npc_right, speaking
+
+    go_yeongeun "Given the situation, we might as well introduce ourselves. I'm Go Yeongeun."
+
+    show kim_soleum neutral at npc_center, speaking
+
+    kim_soleum "I'm Kim Soleum."
+
+    player "Lee Ki-Young"
+
+    "While we were talking, it seems others were talking amongst their groups too. One group was trying to communicate with the other car."
+
+    show kim_soleum neutral at npc_center, not_speaking
+    show go_yeongeun neutral at npc_right, speaking
+
+    go_yeongeun "Ah, those people.. it looks like they're trying to communicate with the front car?"
+
+    "It seems communication is not allowed, exactly what the exploration records also said."
+
+    new_hires "What should we do? We can't communicate with the front car at all. And it looks like there's a fight breaking out up there…"
+
+    inner "A fight? Hopefully some people get off at the next station. No one got of at resentment station. Tsk"
+
+    "As the tension and anxiety among the passengers grew, another station announcement played."
+
+    "But this time..."
+    # TODO add scren scroller
+    announcement "This stop is Euphoria, Euphoria Station."
+
+    new_hires "Doesn't 'euphoria' sound kind of… positive? Maybe…"
+
+    "From the sudden slience and comtemplating looks, it seems many were going to get off at euphoria station."
+
+    announcement "The doors are on your left…"
