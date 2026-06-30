@@ -6,7 +6,7 @@
 init python:
     gui.textbox_alpha = 0.5
 
-define mc   = Character("Mok Jeong", color="#ffcbcb")
+define player   = Character("Mok Jeong", color="#ffcbcb")
 define sys  = Character("SYSTEM", color="#ff4444")
 define employee1 = Character("Employee", color="#585858")
 define hr   = Character("HR Manager Shin", color="#335d79")
@@ -17,7 +17,8 @@ define exploration_records = Character("Exploration records", color="#0252fd")
 define guy_with_box = Character("New hire with box", color="#6d6c6c")
 define quick_witted = Character("Quick witted new hire", color="#cccccc")
 define baek_saheon = Character("Baek Saheon", color="#052914")     # baek_saheon, viper
-define yuna = Character("Yuna", color="#ffccaa")       # Overachiever
+define kim_soleum = Character("Kim Soleum", color="#1B2457")     # baek_saheon, viper
+define go_yeongeun = Character("Go Yeongeun", color="#ffccaa")       # doctor who died early
 define dohyun = Character("Do-hyun", color="#cccccc")  # Denier
 define somi = Character("Somi", color="#ffaacc")       # Panicker / sweet
 define rina  = Character("Rina", color="#ddaaff")      # Sharp girl, survives
@@ -78,18 +79,44 @@ image hr excited= "images/char/presenter.png"
 image hr annoyed= "images/char/presenter_annoyed.png"
 
 # kim soleum
-image mascot neutral = "images/char/kim_soleum.png"
+image kim_soleum neutral = "images/char/kim_soleum.png"
+
+# go yeongeun 
+image go_yeongeun neutral = "images/char/go_yeongeun_neutral.png"
+image go_yeongeun scared = "images/char/go_yeongeun_scared.png"
+image go_yeongeun happy = "images/char/go_yeongeun_happy.png"
+
+# baek saheon 
+image baek_saheon netural = "images/char/baek_saheon_neutral.png"
 
 # Transforms
-
-transform npc_size:
-    xalign 0.2
-    yalign 1.0
-    zoom 0.82
 
 transform higher:
     xalign 0.5
     yalign 0.3
+
+transform npc_left:
+    xalign 0.2
+    yalign 1.0
+    zoom 0.82
+
+transform npc_center:
+    xalign 0.5
+    yalign 1.0
+    zoom 0.82
+
+transform npc_right:
+    xalign 0.8
+    yalign 1.0
+    zoom 0.82
+
+transform speaking:
+    zoom 0.82
+    matrixcolor TintMatrix("#ffffff")
+
+transform not_speaking:
+    zoom 0.82
+    matrixcolor TintMatrix("#888888") * BrightnessMatrix(-0.3)
 
 # Stats
 default contamination = 0

@@ -43,7 +43,7 @@ label chapter_2:
 
     exploration_records "Dark Exploration Records / Ghost Story"
 
-    mc "A ghost story huh?"
+    player "A ghost story huh?"
 
     exploration_records "/ Welcome to Abyss Transpo"
 
@@ -65,27 +65,57 @@ label chapter_2:
 
     inner "Okay so a station's positivity has no correlation with escape success rate-"
 
+    show kim_soleum neutral at npc_center
+    show go_yeongeun neutral at npc_right
+    with dissolve
+
+    show kim_soleum neutral at npc_center, speaking
+    show go_yeongeun neutral at npc_right, not_speaking
+
     guy_with_box "You mentioned a ghost story?"
+
+    show kim_soleum neutral at npc_center, not_speaking
+    show go_yeongeun neutral at npc_right, speaking
 
     new_hires "Ha.. like the ones on youtube" #female doc
 
+    show go_yeongeun neutral at npc_right, not_speaking
+
+    show kim_soleum neutral at npc_center, speaking
+
     guy_with_box "Could you tell me more? This doesn't seem like a normal situation, so it's probably best to share any information we have."
+
+    show kim_soleum neutral at npc_center, not_speaking
 
     inner "Trying to bring up those exploration records?"
 
+    show go_yeongeun neutral at npc_right, speaking
     new_hires "It's not really information… it just feels like everything is straight out of a ghost story. The lecture hall suddenly turned into a subway, and people… died like that." # female doc
 
+    show go_yeongeun scared at npc_right, speaking
     "Her face turned slightly pale, likely remembering the insane dismemberment that happened just moments before."
 
     new_hires "Ah, I'm sorry. I didn't mean to suddenly—"
 
-    mc "No, I've seen something on online forums too."
+    player "No, I've seen something on online forums too."
+
+    show baek_saheon neutral at npc_left, speaking
 
     new_hires "Um, you were sitting next to me earlier, right?" # baek neutral
 
-    "It seemed new hire wasn't part of any of the other conversations happening around us. He rubbed the back of his neck and glanced between the woman I was talking to and me before extending his hand like he wanted to shake mine."
+    "It seemed new hire wasn't part of any of the other conversations happening around us. He rubbed the back of his neck and glanced between the woman I was talking to and me, and the employee with the box."
 
     baek_saheon "My name is Baek Saheon."
 
-
     hide screen ticker
+
+    show baek_saheon neutral at npc_left, not_speaking
+    show go_yeongeun neutral at npc_right, not_speaking
+    show kim_soleum neutral at npc_center, speaking
+
+    guy_with_box "..!" #
+
+    exploration_records "Dark Exploration Records / Daydream Inc: : An employee of Daydream Inc. in <Dark Exploration Records>"
+
+    exploration_records "Final rank - Section Chief           Of these, 17 are special cases recorded in the wiki."
+

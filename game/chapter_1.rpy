@@ -51,7 +51,7 @@ label chapter_1:
     inner "So only ten thousand applied? Doesn't seem like that great of a ratio.."
 
 
-    show employee1 at npc_size
+    show employee1 at npc_left
     with dissolve
 
     employee1 "Excuse me, did you get that somewhere? Is the company giving those out?"
@@ -82,12 +82,12 @@ label chapter_1:
             inner "Too loud. People are looking."
             inner "...that was mildly entertaining though."
 
-            show hr annoyed at npc_size
+            show hr annoyed at npc_left
             with dissolve
 
             "As if to cut someone off..."
 
-    show hr excited at npc_size
+    show hr excited at npc_left
     with dissolve
 
 
