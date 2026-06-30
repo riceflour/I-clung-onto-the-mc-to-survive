@@ -51,14 +51,14 @@ label chapter_1:
     inner "So only ten thousand applied? Doesn't seem like that great of a ratio.."
 
 
-    show employee1 at npc_left
+    show baek_saheon smile at npc_left
     with dissolve
 
     employee1 "Excuse me, did you get that somewhere? Is the company giving those out?"
 
     inner "That wasn't towards me but the person next to me."
 
-    hide employee1
+    hide baek_saheon
 
     "The other employee in question has a strange black box, with a huge silver symbol embossed on it, looked like it had been carefully crafted."
 
